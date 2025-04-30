@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load your trained XGBoost model
-model = joblib.load("xgboost_model.pkl")
+model = joblib.load("xgboost_traffic_model.pkl")
 
 @app.route("/predict", methods=["POST"])
 def predict():
